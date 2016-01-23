@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="mass" sid="972812446408173" static="0" type="number">20</variable>
+        <variable constant="0" name="score" sid="3685947288661064" static="0" type="number">0</variable>
+        <event-block sid="3405974880854188">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6528699140190482" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="5286976396284221" type="Sprite">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-7" name="Set size" sid="5433808596289008" type="Sprite">
+                    <param id="0" name="Width">mass</param>
+                    <param id="1" name="Height">mass</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6071775456764841">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1212934309970808" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1132606631913113" type="Text">
+                    <param id="0" name="Text">score</param>
+                </action>
+                <action id="0" name="Set text" sid="8782510871852329" type="Text2">
+                    <param id="0" name="Text">mass</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7839096839653875">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9817485429317488" type="Sprite">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="3838264914440516" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2987887859682864" type="Sprite2" />
+                <action id="-11" name="Subtract from" sid="7339374703657682" type="System">
+                    <param id="0" name="Variable">mass</param>
+                    <param id="1" name="Value">-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9904935018635836">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6120368561623168" type="Sprite">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="36653280616105" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5989717136373305" type="Sprite3" />
+                <action id="-11" name="Subtract from" sid="7160547478811003" type="System">
+                    <param id="0" name="Variable">mass</param>
+                    <param id="1" name="Value">-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7035736746627901">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6024595058930668" type="Sprite">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="9408634812717904" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9205172105376472" type="Sprite4" />
+                <action id="-11" name="Subtract from" sid="3347565840860591" type="System">
+                    <param id="0" name="Variable">mass</param>
+                    <param id="1" name="Value">-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7221896294117215">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2945450403489462" type="Sprite">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4672153150470213" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7470599522166362" type="Sprite5" />
+                <action id="-11" name="Subtract from" sid="7297566379745626" type="System">
+                    <param id="0" name="Variable">mass</param>
+                    <param id="1" name="Value">-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5927843288218267">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8013773039042644" type="Sprite">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="1747384142661364" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="179064226302072" type="Sprite6" />
+                <action id="-11" name="Subtract from" sid="3657389089107838" type="System">
+                    <param id="0" name="Variable">mass</param>
+                    <param id="1" name="Value">-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3709967022755078">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3152195289706754" type="System">
+                    <param id="0" name="Variable">mass</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">40</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4608790404407944">
+                    <conditions>
+                        <condition id="0" name="On click" sid="3460877801380153" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="8988294879914836" type="System">
+                            <param id="0" name="Variable">mass</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="5514663638189786" type="Sprite">
+                            <param id="0" name="Object">Sprite7</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1908941668804662">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1368841957278558" type="Sprite7">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4340823067368353" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6321907914112661">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5599589764203511" type="Sprite7">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="9384054589874847" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3961540360518132">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2399276801590308" type="Sprite7">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="1882738044014122" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3100990886267776">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="187096291999844" type="Sprite7">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="250031976072736" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8196598545385536">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="986595594996891" type="Sprite7">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="9245350623894346" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
